@@ -34,5 +34,7 @@ module.exports = {
     'react/no-unused-prop-types': 'off',
     'react/destructuring-assignment': 'off',
     'react/button-has-type': 'off',
+    'import/no-cycle': 'off',
+    '@typescript-eslint/no-shadow': 'off',
   }
 };
