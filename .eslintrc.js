@@ -33,5 +33,6 @@ module.exports = {
     'react/require-default-props': 'off',
     'react/no-unused-prop-types': 'off',
     'react/destructuring-assignment': 'off',
+    'react/button-has-type': 'off',
   }
 };
