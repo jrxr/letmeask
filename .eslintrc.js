@@ -36,5 +36,6 @@ module.exports = {
     'react/button-has-type': 'off',
     'import/no-cycle': 'off',
     '@typescript-eslint/no-shadow': 'off',
+    'no-alert': 'off',
   }
 };
