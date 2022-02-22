@@ -37,5 +37,6 @@ module.exports = {
     'import/no-cycle': 'off',
     '@typescript-eslint/no-shadow': 'off',
     'no-alert': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
   }
 };
