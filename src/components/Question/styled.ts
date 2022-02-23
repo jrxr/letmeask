@@ -20,7 +20,7 @@ export const Container = styled.div`
   }
 
   &.answered {
-    background: #570f48;
+    background: #de3fbf;
   }
 
   p {

@@ -38,9 +38,8 @@ export const Container = styled.div`
 
   main {
     flex: 8;
-
     padding: 0 32px;
-
+    background: ${props => props.theme.colors.background};
     display: flex;
     align-items: center;
     justify-content: center;
