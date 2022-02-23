@@ -1,7 +1,11 @@
-#page-room {
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  background: ${props => props.theme.colors.background};
+  height: 100vh;
   header {
     padding: 24px;
-    border-bottom: 1px solid #e2e2e2;
+    border-bottom: 1px solid ${props => props.theme.colors.background_2};
 
     .content {
       max-width: 1120px;
@@ -20,7 +24,31 @@
 
         button {
           height: 40px;
+        }
+      }
+    }
 
+    @media (max-width: 640px) {
+      .content {
+        flex-direction: column;
+
+        > div {
+          gap: 16px;
+        }
+        > img {
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    @media (max-width: 460px) {
+      .content {
+        > div {
+          flex-direction: column;
+          gap: 16px;
+        }
+        > img {
+          margin-bottom: 16px;
         }
       }
     }
@@ -38,7 +66,7 @@
       h1 {
         font-family: 'Poppins', sans-serif;
         font-size: 24px;
-        color: #29292e;
+        color: ${props => props.theme.colors.h1};
       }
 
       span {
@@ -46,7 +74,7 @@
         background: #e559f9;
         border-radius: 9999px;
         padding: 8px 16px;
-        color: #FFFFFF;
+        color: #ffffff;
         font-weight: 500;
         font-size: 14px;
       }
@@ -82,7 +110,7 @@
 
           span {
             margin-left: 8px;
-            color: #29292e;
+            color: ${props => props.theme.colors.h1};
             font-weight: 500;
             font-size: 14px;
           }
@@ -90,13 +118,13 @@
 
         > span {
           font-size: 14px;
-          color: #737380;
+          color: ${props => props.theme.colors.h1};
           font-weight: 500;
 
           button {
             background: transparent;
             border: 0;
-            color: #835AFD;
+            color: #835afd;
             text-decoration: underline;
             font-size: 14px;
             font-weight: 500;
@@ -109,4 +137,13 @@
       margin-top: 32px;
     }
   }
-}
+`;
+
+export const SwitchContainer = styled.div`
+  @media (max-width: 640px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+`;

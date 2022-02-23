@@ -1,9 +1,11 @@
-.button {
+import styled from 'styled-components';
+
+export const ButtonContainer = styled.button`
   height: 50px;
   border-radius: 8px;
   font-weight: 500;
   background: #835afd;
-  color: #FFF;
+  color: #fff;
   padding: 0 32px;
 
   display: flex;
@@ -20,7 +22,7 @@
   }
 
   &.outlined {
-    background: #FFF;
+    background: #fff;
     border: 1px solid #835afd;
     color: #835afd;
   }
@@ -33,4 +35,4 @@
     cursor: not-allowed;
     opacity: 0.6;
   }
-}
+`;

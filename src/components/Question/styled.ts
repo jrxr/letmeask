@@ -1,28 +1,30 @@
-.question {
-  background: #fefefe;
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  background: ${props => props.theme.colors.background_2};
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
   padding: 24px;
 
-  & + .question {
-    margin-top: 8px;
+  & + div {
+    margin-top: 10px;
   }
 
   &.highlighted {
-    background: #F4F0FF;
-    border: 1px solid #835AFD;
+    background: #570f48;
+    border: 1px solid #835afd;
 
     footer .user-info span {
-      color: #29292E;
+      color: #fff;
     }
   }
 
   &.answered {
-    background: #DBDCDD;
+    background: #570f48;
   }
 
   p {
-    color: #29292e;
+    color: #fff;
   }
 
   footer {
@@ -43,7 +45,7 @@
 
       span {
         margin-left: 8px;
-        color: #737380;
+        color: #fff;
         font-size: 14px;
       }
     }
@@ -62,14 +64,14 @@
       &.like-button {
         display: flex;
         align-items: flex-end;
-        color: #737380;
+        color: #fff;
         gap: 8px;
 
         &.liked {
-          color: #835afd;
+          color: #fff;
 
           svg path {
-            stroke: #835afd;
+            stroke: #fff;
           }
         }
       }
@@ -79,4 +81,4 @@
       }
     }
   }
-}
+`;

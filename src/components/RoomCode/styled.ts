@@ -1,9 +1,11 @@
-.room-code {
+import styled from 'styled-components';
+
+export const Button = styled.button`
   height: 40px;
   border-radius: 8px;
   overflow: hidden;
 
-  background: #FFF;
+  background: #fff;
   border: 1px solid #835afd;
   cursor: pointer;
 
@@ -23,8 +25,9 @@
     align-self: center;
     flex: 1;
     padding: 0 16px 0 12px;
-    width: 230px;
+    width: 250px;
     font-size: 14px;
     font-weight: 500;
+    color: ${props => props.theme.colors.background_2};
   }
-}
+`;
